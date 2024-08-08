@@ -1,0 +1,15 @@
+To solve this problem, we can use the Python programming language, along with the Newspaper and Feedparser modules. The Newspaper module is a powerful tool for extracting and parsing news articles from various sources, while the Feedparser module is useful for parsing RSS feeds. RSS (Really Simple Syndication) is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format. These updates can include blog entries, news articles, audio, video, and any other content that can be provided in a feed.
+
+Required Module
+
+pip install newspaper3k
+pip install feedparser
+First, we import the required modules newspaper, and feedparser. Next, we define a function called 
+scrape_news_from_feed() which takes a feed URL as input. Inside the function, we first parse the RSS 
+feed using the feedparser.parse() method. This returns a dictionary containing various information about the feed and its entries.
+
+Create a newspaper article object using the newspaper.Article() constructor and passing it the link of the article.
+
+Then download and parse the article using the article.download() and article.parse() methods. Extract relevant information
+such as the title, author, publish date, and main content of the article. Append this information
+to a list of articles. Finally, the function returns the list of articles.
