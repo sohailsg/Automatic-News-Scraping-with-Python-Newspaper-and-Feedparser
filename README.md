@@ -5,7 +5,11 @@ Some of the Important Methods are:
 The Newspaper and  Feedparser modules have several useful methods for extracting and parsing news articles:
 
 newspaper.build(): This method is used to build a newspaper object from a given URL.
+
 newspaper.download(): This method is used to download the HTML of a given URL.
+
 newspaper.parse(): This method is used to parse the HTML of a given URL and extract relevant information such as the title, author, publish date, and main content of the article.
+
 feedparser.parse(): This method is used to parse an RSS feed and extract relevant information such as the title, author, publish date, and link of the article.
+
 Now that we have an understanding of the modules and methods we will be using, let’s look at how we can use them to scrape and parse news articles from various sources.
